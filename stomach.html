@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stomach</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background-stomach.jpg'); /* Replace with the actual URL/path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        main {
+            background-image: url('C:/Users/Swapnil/Desktop/grp pro/bg.png');            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main h2, main h3 {
+            animation: fadeInUp 1s ease;
+        }
+
+        main p, main ul {
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .video-section {
+            margin-top: 20px;
+            text-align: center;
+            animation: zoomIn 1.5s ease;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: rgba(0, 123, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Stomach</h1>
+    </header>
+
+    <main class="container">
+        <h2>Overview</h2>
+        <p>
+            The stomach is a muscular organ located on the left side of the upper abdomen. It plays a vital role in digestion by breaking down food into smaller particles using acids and enzymes. The stomach prepares food for absorption in the small intestine.
+        </p>
+
+        <h3>Structure of the Stomach</h3>
+        <p>The stomach is divided into several parts, each serving specific functions:</p>
+        <ul>
+            <li>
+                <strong>Cardia:</strong> The entry point where food passes from the esophagus into the stomach.
+            </li>
+            <li>
+                <strong>Fundus:</strong> The upper rounded portion that stores undigested food and gases released during digestion.
+            </li>
+            <li>
+                <strong>Body:</strong> The largest section where most digestion occurs.
+            </li>
+            <li>
+                <strong>Pylorus:</strong> The lower part that connects to the small intestine and regulates the passage of digested food.
+            </li>
+        </ul>
+
+        <h3>Functions of the Stomach</h3>
+        <p>The stomach has several key functions:</p>
+        <ul>
+            <li>
+                <strong>Digestion:</strong> The stomach uses hydrochloric acid and digestive enzymes to break down proteins and food particles.
+            </li>
+            <li>
+                <strong>Storage:</strong> It stores food temporarily before passing it to the small intestine.
+            </li>
+            <li>
+                <strong>Secretion:</strong> Produces gastric juices and mucus to aid digestion and protect the stomach lining.
+            </li>
+            <li>
+                <strong>Churning:</strong> The stomach's muscular walls mix and churn food for better digestion.
+            </li>
+        </ul>
+
+        <div class="video-section">
+            <h3>Watch a Video on the Stomach</h3>
+            <iframe width="928" height="522" src="https://www.youtube.com/embed/URrXh0LJ6JE" title="THE HUMAN DIGESTIVE SYSTEM OESOPHAGUS AND STOMACH v02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h3>Interesting Facts About the Stomach</h3>
+        <ul>
+            <li>The stomach can expand to hold up to 4 liters of food and liquid.</li>
+            <li>Its lining regenerates every few days to protect it from the acidic environment.</li>
+            <li>Hydrochloric acid in the stomach is strong enough to dissolve metal.</li>
+            <li>The stomach produces about 3 liters of gastric juice daily.</li>
+        </ul>
+
+        <h3>Health Tips for the Stomach</h3>
+        <p>To keep your stomach healthy, follow these tips:</p>
+        <ul>
+            <li>Eat balanced meals and avoid overeating.</li>
+            <li>Limit spicy, fatty, and acidic foods if you experience heartburn.</li>
+            <li>Stay hydrated to support digestion.</li>
+            <li>Avoid lying down immediately after eating to prevent acid reflux.</li>
+            <li>Incorporate probiotics to maintain a healthy gut microbiome.</li>
+        </ul>
+        <div class="btn-container">
+            <a href="human.html" class="btn btn-primary">Go to Human Anatomy</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Biology Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

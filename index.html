@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('C:/Users/Swapnil/Desktop/grp pro/background.png'); /* Replace with an actual URL for your background */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue header */
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .body-map {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.7); /* Light overlay for better contrast */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .body-map img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .body-map:hover img {
+            transform: scale(1.02); /* Zoom in effect */
+        }
+
+        .body-part {
+            position: absolute;
+            cursor: pointer;
+            color: transparent;
+            transition: color 0.2s ease, transform 0.3s ease;
+        }
+
+        .body-part:hover {
+            color: #007bff;
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .body-part span {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .body-part:hover span {
+            display: inline;
+        }
+
+        footer {
+            background-color: rgba(0, 123, 255, 0.8); /* Same color as header */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biology Education</h1>
+        <p>Hover over the body parts to learn more, and click to explore!</p>
+    </header>
+
+    <div class="body-map">
+        <img src="hb.png" alt="Human Anatomy">
+
+        <!-- Brain -->
+        <div class="body-part" style="top: 10%; left: 45%; width: 5%; height: 5%;" onclick="openPage('brain.html')">
+            <span>Brain</span>
+        </div>
+
+        <!-- Heart -->
+        <div class="body-part" style="top: 30%; left: 51%; width: 5%; height: 5%;" onclick="openPage('heart.html')">
+            <span>Heart</span>
+        </div>
+
+        <!-- Lungs -->
+        <div class="body-part" style="top: 30%; left: 40%; width: 10%; height: 10%;" onclick="openPage('lungs.html')">
+            <span>Lungs</span>
+        </div>
+
+        <!-- Stomach -->
+        <div class="body-part" style="top: 36%; left: 47%; width: 5%; height: 8%;" onclick="openPage('stomach.html')">
+            <span>Stomach</span>
+        </div>
+
+        <!-- Kidneys -->
+        <div class="body-part" style="top: 41%; left: 39%; width: 8%; height: 5%;" onclick="openPage('kidneys.html')">
+            <span>Kidneys</span>
+        </div>
+
+        <!-- Eyes -->
+        <div class="body-part" style="top: 17%; left: 45%; width: 5%; height: 5%;" onclick="openPage('eyes.html')">
+            <span>Eyes</span>
+        </div>
+
+        <!-- Nose -->
+        <div class="body-part" style="top: 18%; left: 47%; width: 3%; height: 3%;" onclick="openPage('nose.html')">
+            <span>Nose</span>
+        </div>
+
+        <!-- Mouth -->
+        <div class="body-part" style="top: 20%; left: 46%; width: 4%; height: 4%;" onclick="openPage('mouth.html')">
+            <span>Mouth</span>
+        </div>
+
+        <!-- Liver -->
+        <div class="body-part" style="top: 37%; left: 50%; width: 7%; height: 7%;" onclick="openPage('liver.html')">
+            <span>Liver</span>
+        </div>
+
+        <!-- Intestines -->
+        <div class="body-part" style="top: 37%; left: 44%; width: 7%; height: 12%;" onclick="openPage('bigintestines.html')">
+            <span>BigIntestines</span>
+        </div>
+        <div class="body-part" style="top: 39%; left: 48%; width: 12%; height: 12%;" onclick="openPage('smallintestines.html')">
+            <span>SmallIntestines</span>
+        </div>
+
+        <!-- Arms -->
+        <div class="body-part" style="top: 41%; left: 30%; width: 10%; height: 20%;" onclick="openPage('arms.html')">
+            <span>Arms</span>
+        </div>
+
+        <!-- Legs -->
+        <div class="body-part" style="top: 85%; left: 42%; width: 7%; height: 15%;" onclick="openPage('legs.html')">
+            <span>Legs</span>
+        </div>
+    </div>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Biology Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

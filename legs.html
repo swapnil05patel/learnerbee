@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        main {
+            background-image: url('C:/Users/Swapnil/Desktop/grp pro/bg.png');            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main h2, main h3 {
+            animation: fadeInUp 1s ease;
+        }
+
+        main p, main ul {
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .video-section {
+            margin-top: 20px;
+            text-align: center;
+            animation: zoomIn 1.5s ease;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: rgba(0, 123, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Legs</h1>
+    </header>
+
+    <main class="container">
+        <h2>Overview</h2>
+        <p>
+            The legs are essential parts of the body that provide mobility and support. They enable humans to walk, run, jump, and perform many other movements. The legs also support the weight of the body and contribute to balance and posture.
+        </p>
+
+        <h3>Structure of the Legs</h3>
+        <p>The legs are made up of several major components:</p>
+        <ul>
+            <li><strong>Femur:</strong> The thigh bone, the longest and strongest bone in the body.</li>
+            <li><strong>Knee:</strong> A hinge joint that connects the femur to the tibia.</li>
+            <li><strong>Tibia and Fibula:</strong> The two bones in the lower leg. The tibia is the larger of the two and bears most of the weight.</li>
+            <li><strong>Patella:</strong> The kneecap, which protects the knee joint.</li>
+            <li><strong>Muscles:</strong> Key muscles like the quadriceps, hamstrings, and calf muscles that allow movement.</li>
+        </ul>
+
+        <h3>Functions of the Legs</h3>
+        <p>The legs serve several critical functions, such as:</p>
+        <ul>
+            <li><strong>Movement:</strong> They allow walking, running, jumping, and other activities.</li>
+            <li><strong>Support:</strong> The legs support the weight of the body and keep us upright.</li>
+            <li><strong>Balance:</strong> The legs help maintain balance during movement.</li>
+        </ul>
+
+        <div class="video-section">
+            <h3>Watch a Video on How the Legs Work</h3>
+            <iframe width="928" height="522" src="https://www.youtube.com/embed/ROd1Acma64o" title="Foot Anatomy Animated Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h3>Interesting Facts About the Legs</h3>
+        <ul>
+            <li>The femur can withstand a lot of pressure, up to 30 times your body weight.</li>
+            <li>The quadriceps is the strongest muscle group in the body.</li>
+            <li>The average person walks about 100,000 miles in their lifetime.</li>
+            <li>Leg muscles make up about 40% of the body’s total muscle mass.</li>
+        </ul>
+
+        <h3>Tips for Healthy Legs</h3>
+        <p>To maintain strong and healthy legs, follow these tips:</p>
+        <ul>
+            <li>Regularly exercise the muscles in your legs with activities like walking, cycling, and squats.</li>
+            <li>Maintain a healthy weight to reduce the strain on your legs and joints.</li>
+            <li>Stretch regularly to improve flexibility and prevent muscle stiffness.</li>
+            <li>Wear proper footwear to support your legs and reduce the risk of injury.</li>
+            <li>Consider massage or using foam rollers to relieve muscle tension and improve circulation.</li>
+        </ul>
+        <div class="btn-container">
+            <a href="human.html" class="btn btn-primary">Go to Human Anatomy</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Biology Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

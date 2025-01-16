@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        main {
+            background-image: url('C:/Users/Swapnil/Desktop/grp pro/bg.png');            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main h2, main h3 {
+            animation: fadeInUp 1s ease;
+        }
+
+        main p, main ul {
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .video-section {
+            margin-top: 20px;
+            text-align: center;
+            animation: zoomIn 1.5s ease;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background-color: rgba(0, 123, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Eyes</h1>
+    </header>
+
+    <main class="container">
+        <h2>Overview</h2>
+        <p>
+            The eyes are complex organs that allow vision. They detect light and convert it into electrical signals that the brain interprets as images. Eyes are essential for many daily activities, and they play a crucial role in human perception and understanding of the world.
+        </p>
+
+        <h3>Structure of the Eye</h3>
+        <p>The eye consists of several key components:</p>
+        <ul>
+            <li><strong>Cornea:</strong> The clear, outer layer that focuses light.</li>
+            <li><strong>Iris:</strong> The colored part of the eye that controls the size of the pupil.</li>
+            <li><strong>Pupil:</strong> The black circular opening that allows light to enter.</li>
+            <li><strong>Lens:</strong> The transparent structure that focuses light onto the retina.</li>
+            <li><strong>Retina:</strong> The light-sensitive layer at the back of the eye that sends signals to the brain.</li>
+        </ul>
+
+        <h3>Functions of the Eye</h3>
+        <p>The eye has several important functions, including:</p>
+        <ul>
+            <li><strong>Vision:</strong> The ability to see and interpret light.</li>
+            <li><strong>Depth Perception:</strong> The ability to judge distances based on visual cues.</li>
+            <li><strong>Color Detection:</strong> The ability to perceive different wavelengths of light as color.</li>
+        </ul>
+
+        <div class="video-section">
+            <h3>Watch a Video on How the Eye Works</h3>
+            <iframe width="928" height="522" src="https://www.youtube.com/embed/8gRpjwmbdJQ" title="EYE ANATOMY IN 3 MINUTES!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h3>Interesting Facts About the Eyes</h3>
+        <ul>
+            <li>The human eye can distinguish about 10 million different colors.</li>
+            <li>Each eye has a unique fingerprint-like pattern.</li>
+            <li>The eye is the second most complex organ in the body after the brain.</li>
+            <li>Our eyes can process images in less than 1/10th of a second.</li>
+        </ul>
+
+        <h3>Tips for Healthy Eyes</h3>
+        <p>To maintain good eye health, consider the following tips:</p>
+        <ul>
+            <li>Eat foods rich in vitamins A, C, and E to promote eye health.</li>
+            <li>Wear sunglasses to protect your eyes from UV radiation.</li>
+            <li>Take regular breaks from screens to prevent eye strain.</li>
+            <li>Get regular eye check-ups to detect issues early.</li>
+            <li>Quit smoking, as it increases the risk of eye diseases.</li>
+        </ul>
+        <div class="btn-container">
+            <a href="human.html" class="btn btn-primary">Go to Human Anatomy</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Biology Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
